@@ -9,7 +9,7 @@ class StringToLabel(App):
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        self.string_list = ["word", "more words", "another word", "blah"]
+        self.string_list = ["word", "words", "more words", "another word", "even more words"]
 
     def build(self):
         self.title = "List of Strings"
