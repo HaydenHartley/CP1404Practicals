@@ -1,11 +1,28 @@
+<Button>:
+    font_size: 30
+    background_normal: ''
+    canvas.after:
+        Color:
+            rgba: 0, 0, 0, 1
+        Line:
+            rectangle: self.x + 1, self.y + 1, self.width - 1, self.height - 1
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    color: 0, 0, 0.7, 1
+
 BoxLayout:
     orientation: 'vertical'
     BoxLayout:
         orientation: 'horizontal'
         TextInput:
             id: miles_input
-            text: '1'
+            text: '1.0'
             font_size: 50
+            color: (1, 1, 1, 1)
             on_text: app.handle_calculate_km()
         BoxLayout:
             orientation: 'vertical'
