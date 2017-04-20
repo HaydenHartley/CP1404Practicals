@@ -3,15 +3,21 @@ BoxLayout:
     BoxLayout:
         orientation: 'horizontal'
         TextInput:
-            text: '0'
+            id: miles_input
+            text: '1'
+            font_size: 50
+            on_text: app.handle_calculate_km()
         BoxLayout:
             orientation: 'vertical'
             Button:
                 text: 'Up'
+                on_press: app.handle_count(1)
             Button:
                 text: 'Down'
+                on_press: app.handle_count(-1)
     Button:
         text: 'Convert miles to kilometres'
+        on_press: app.handle_calculate_km()
     Label:
         id: output_label
         text: ''
