@@ -1,8 +1,8 @@
 class Guitar:
-    def __init__(self):
-        self.name = ""
-        self.year = 0
-        self.cost = 0
+    def __init__(self, name, year, cost):
+        self.name = name
+        self.year = year
+        self.cost = cost
 
     def __str__(self):
         return"{} ({}) : ${:.2f}".format(self.name, self.year, self.cost)
