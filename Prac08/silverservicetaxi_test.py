@@ -1,7 +1,7 @@
 from Prac08.taxi import SilverServiceTaxi
 
-Hummer = SilverServiceTaxi("Hummer", 200, 2)
-print(Hummer)
-Hummer.start_fare()
-Hummer.drive(10)
-print(Hummer.get_fare())
+hummer = SilverServiceTaxi("Hummer", 200, 2)
+print(hummer)
+hummer.start_fare()
+hummer.drive(10)
+print(hummer.get_fare())
