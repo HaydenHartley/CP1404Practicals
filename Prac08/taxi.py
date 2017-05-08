@@ -70,9 +70,9 @@ class UnreliableCar(Car):
         self.reliability = reliability
 
     def drive(self, distance):
-        if random.randint(0, 100) < self.reliability:
+        if random.randint(0, 100) > self.reliability:
             distance = 0
-        return super().drive(distance)
+        return "Drove {} km".format(super().drive(distance))
 
 class SilverServiceTaxi(Taxi):
     def __init__(self, name, fuel, fanciness, flagfall=4.50):
